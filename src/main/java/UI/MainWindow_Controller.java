@@ -3,7 +3,7 @@ package UI;
 import gameObject.GameManager;
 import gameObject.Kartu.Kartu;
 import gameObject.Kartu.KartuHewan.KartuHewan;
-import gameObject.Kartu.KartuItem;
+import gameObject.Kartu.KartuItem.KartuItem;
 import gameObject.Kartu.KartuTanaman.KartuTanaman;
 import gameObject.Pemain.Deck;
 import gameObject.Pemain.Ladang;
@@ -25,9 +25,10 @@ public class MainWindow_Controller {
     private GameManager manager;
     private boolean ladang_lawan;
 
-//    private List<ImageView> deck_images;
-//    private List<ImageView> imagesviews;
+    private List<ImageView> deck_imv;
+    private List<ImageView> ladang_imv;
     private ImageView sourceImageView;
+
 
     @FXML
     public Button butt_next;
@@ -125,11 +126,11 @@ public class MainWindow_Controller {
     public void initialize(){
         ladang_lawan = false;
 
-        List<ImageView> deck_imv = new ArrayList<ImageView>(Arrays.asList(
+        this.deck_imv = new ArrayList<ImageView>(Arrays.asList(
                 ImageView1, ImageView2, ImageView3, ImageView4, ImageView5, ImageView6
         ));
 
-        List<ImageView> ladang_imv = new ArrayList<ImageView>(Arrays.asList(
+        this.ladang_imv = new ArrayList<ImageView>(Arrays.asList(
                 ImageViewLadang1, ImageViewLadang2, ImageViewLadang3, ImageViewLadang4, ImageViewLadang5,
                 ImageViewLadang6, ImageViewLadang7, ImageViewLadang8, ImageViewLadang9, ImageViewLadang10,
                 ImageViewLadang11, ImageViewLadang12, ImageViewLadang13, ImageViewLadang14, ImageViewLadang15,
@@ -248,9 +249,11 @@ public class MainWindow_Controller {
                         imv.setImage(db.getImage());
                         sourceImageView.setImage(null);
                         success = true;
+                        SwicthDecktoLadang(sourceImageView, imv);
                     } else if (getKartuAtImv(imv,1) instanceof KartuHewan || getKartuAtImv(imv,1) instanceof KartuTanaman) {
                         sourceImageView.setImage(null);
                         success = true;
+                        addItemTo(sourceImageView,imv);
                     }
                 }else{
                     if (imv.getImage() == null) {
@@ -299,6 +302,7 @@ public class MainWindow_Controller {
     public void next(){
         this.manager.next_turn();
         setTurn(manager.getTurn());
+        init_ladang_deck(deck_imv,ladang_imv);
     }
 
     public Kartu getKartuAtImv(ImageView imv, Integer type){
@@ -406,11 +410,17 @@ public class MainWindow_Controller {
                     imv.setImage(new Image(p.getDeck().getActive_deck().get(id-1).getImagePath()));
                 }
             }
+        }else{
+            for (ImageView imv : deck_imv){
+                imv.setImage(null);
+            }
         }
         for (ImageView imv : ladang_imv){
             Integer id = imv_ladang_name_to_petakid(imv);
             if (p.getLadang().getKartuAt(id) != null){
                 imv.setImage(new Image(p.getLadang().getKartuAt(id).getImagePath()));
+            }else{
+                imv.setImage(null);
             }
         }
 

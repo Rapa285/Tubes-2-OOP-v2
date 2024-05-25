@@ -23,6 +23,14 @@ public class MainMenu extends Application {
         p1.getDeck_active().add(new KartuKuda());
         p1.getDeck_active().add(new KartuBeruang());
         p1.getDeck_active().add(new KartuDomba());
+
+
+        p2.getDeck_active().add(new KartuSapi());
+        p2.getDeck_active().add(new KartuHiuDarat());
+        p2.getDeck_active().add(new KartuBeruang());
+        p2.getDeck_active().add(new KartuDomba());
+
+
         System.out.println(p1.getDeck_active());
         MainWindow_Controller MWcon= new MainWindow_Controller(new GameManager(p1,p2));
         fxmlLoader.setController(MWcon);
