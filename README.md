@@ -1,7 +1,7 @@
 # 1. Penjelasan Singkat Aplikasi 
 
 # 2. Requirement 
-* JavaFX
+* [JavaFX](https://gluonhq.com/products/javafx/)
 
 # 3. How to Run 
 
