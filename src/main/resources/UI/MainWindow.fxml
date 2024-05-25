@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<Scene xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.MainWindow_Controller">
+<Scene xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" >
     <AnchorPane prefHeight="540.0" prefWidth="540.0">
       <children>
          <Button fx:id="butt_next" layoutX="440.0" layoutY="31.0" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #E0E0E0; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: gray;" text="Next" />
@@ -213,18 +213,12 @@
             <children>
                <Label text="Player 1" />
                <Label layoutX="10.0" layoutY="17.0" text="Player 2" GridPane.rowIndex="1" />
-               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
-                  <image>
-                     <Image url="@../../../gameobject_resource/Other/gulden.png" />
-                  </image>
+               <ImageView fx:id="gulden_1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                </ImageView>
                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                <Label fx:id="label_gulden1" text="0" GridPane.columnIndex="1" />
                <Label fx:id="label_gulden2" layoutX="107.0" layoutY="18.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-               <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="144.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                  <image>
-                     <Image url="@../../../gameobject_resource/Other/gulden.png" />
-                  </image>
+               <ImageView fx:id="gulden_2" fitHeight="30.0" fitWidth="30.0" layoutX="144.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                </ImageView>
             </children>
          </GridPane>
