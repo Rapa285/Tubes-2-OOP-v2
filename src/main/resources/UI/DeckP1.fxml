@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Deck_Controller">
+    <AnchorPane prefHeight="540.0" prefWidth="540.0">
+      <children>
+         <Label fx:id="Deck_count" alignment="CENTER" contentDisplay="TOP" layoutX="415.0" layoutY="457.0" prefHeight="35.0" prefWidth="100.0" style="-fx-border-color: gray; -fx-background-color: #E0E0E0; -fx-border-radius: 10; -fx-background-radius: 10;" text="Deck&#10;xx/40" textAlignment="CENTER" wrapText="true">
+            <font>
+               <Font size="11.0" />
+            </font></Label>
+         <HBox alignment="CENTER" layoutX="53.0" layoutY="440.0" prefHeight="69.0" prefWidth="356.0" spacing="10.0">
+            <children>
+               <Pane prefHeight="70.0" prefWidth="50.0" style="-fx-background-color: #E0E0E0; -fx-border-color: gray; -fx-border-radius: 10; -fx-background-radius: 10;">
+                  <children>
+                     <ImageView fx:id="ImageView1" fitHeight="70.0" fitWidth="50.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     </ImageView>
+                  </children>
+               </Pane>
+               <Pane layoutX="163.0" layoutY="10.0" prefHeight="70.0" prefWidth="50.0" style="-fx-background-color: #E0E0E0; -fx-border-color: gray; -fx-border-radius: 10; -fx-background-radius: 10;">
+                  <children>
+                     <ImageView fx:id="ImageView2" fitHeight="70.0" fitWidth="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     </ImageView>
+                  </children>
+               </Pane>
+               <Pane layoutX="193.0" layoutY="10.0" prefHeight="70.0" prefWidth="50.0" style="-fx-background-color: #E0E0E0; -fx-border-color: gray; -fx-border-radius: 10; -fx-background-radius: 10;">
+                  <children>
+                     <ImageView fx:id="ImageView3" fitHeight="70.0" fitWidth="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     </ImageView>
+                  </children>
+               </Pane>
+               <Pane layoutX="224.0" layoutY="10.0" prefHeight="70.0" prefWidth="50.0" style="-fx-background-color: #E0E0E0; -fx-border-color: gray; -fx-border-radius: 10; -fx-background-radius: 10;">
+                  <children>
+                     <ImageView fx:id="ImageView4" fitHeight="70.0" fitWidth="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     </ImageView>
+                  </children>
+               </Pane>
+               <Pane layoutX="254.0" layoutY="10.0" prefHeight="70.0" prefWidth="50.0" style="-fx-background-color: #E0E0E0; -fx-border-color: gray; -fx-border-radius: 10; -fx-background-radius: 10;">
+                  <children>
+                     <ImageView fx:id="ImageView5" fitHeight="70.0" fitWidth="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     </ImageView>
+                  </children>
+               </Pane>
+               <Pane layoutX="284.0" layoutY="10.0" prefHeight="70.0" prefWidth="50.0" style="-fx-background-color: #E0E0E0; -fx-border-color: gray; -fx-border-radius: 10; -fx-background-radius: 10;">
+                  <children>
+                     <ImageView fx:id="ImageView6" fitHeight="70.0" fitWidth="50.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     </ImageView>
+                  </children>
+               </Pane>
+            </children></HBox>
+         <Pane layoutX="316.0" layoutY="27.0" prefHeight="60.0" prefWidth="60.0" />
+      </children></AnchorPane>
+</Scene>

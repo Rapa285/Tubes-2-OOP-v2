@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.UI.InfoKartu_Controller">
+    <AnchorPane prefHeight="275.0" prefWidth="500.0">
+      <children>
+         <Label fx:id="label_namakartu" layoutX="203.0" layoutY="32.0" text="Nama Kartu">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Button fx:id="butt_kembali" layoutX="23.0" layoutY="33.0" mnemonicParsing="false" style="-fx-background-color: #D3D3D3; -fx-border-color: black; -fx-background-radius: 3; -fx-border-radius: 3;" text="kembali" />
+         <ImageView fx:id="imageview_infokartu" fitHeight="150.0" fitWidth="150.0" layoutX="336.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+         <Button fx:id="butt_panen" layoutX="224.0" layoutY="213.0" mnemonicParsing="false" prefWidth="60.0" style="-fx-background-color: #D3D3D3; -fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 3;" text="Panen" />
+         <Label fx:id="label_beratkartu" layoutX="52.0" layoutY="129.0" text="Berat : X(Y) " />
+         <Label fx:id="label_itemkartu" layoutX="52.0" layoutY="147.0" text="Item aktif : Item1(n), Item2(n)" />
+      </children></AnchorPane>
+</Scene>
