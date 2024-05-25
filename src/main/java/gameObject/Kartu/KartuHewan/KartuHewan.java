@@ -1,7 +1,7 @@
 package gameObject.Kartu.KartuHewan;
 
 import gameObject.Kartu.Kartu;
-import gameObject.Kartu.KartuItem;
+import gameObject.Kartu.KartuItem.KartuItem;
 
 import java.util.ArrayList;
 import java.util.List;

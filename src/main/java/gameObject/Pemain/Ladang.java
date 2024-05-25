@@ -2,7 +2,7 @@ package gameObject.Pemain;
 
 import gameObject.Kartu.Kartu;
 import gameObject.Kartu.KartuHewan.KartuHewan;
-import gameObject.Kartu.KartuItem;
+import gameObject.Kartu.KartuItem.KartuItem;
 import gameObject.Kartu.KartuTanaman.KartuTanaman;
 
 import java.util.HashMap;

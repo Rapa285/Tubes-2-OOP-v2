@@ -1,6 +1,7 @@
 package gameObject.Kartu;
 
 import gameObject.Kartu.KartuHewan.KartuHewan;
+import gameObject.Kartu.KartuItem.KartuItem;
 import gameObject.Kartu.KartuProduk.KartuProduk;
 
 import java.lang.reflect.Method;

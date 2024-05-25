@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import gameObject.Kartu.Kartu;
-import gameObject.Kartu.KartuItem;
+import gameObject.Kartu.KartuItem.KartuItem;
 
 import java.util.HashMap;
 import java.util.List;
