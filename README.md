@@ -7,6 +7,8 @@
 * [IDE : Visual Studio Code](https://code.visualstudio.com/download)
 
 # 3. How to Run 
+* Masuk ke direktori src/main/java/UI/Main.java
+* Jalankan file Main.java
 
 # 4. Identitas
 ### M. Zulfiansyah Bayu Pratama / 13521028
