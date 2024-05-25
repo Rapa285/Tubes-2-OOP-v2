@@ -1,5 +1,9 @@
 package gameObject.Pemain;
 
+import gameObject.Kartu.Kartu;
+
+import java.util.List;
+
 public class Pemain {
     private int id;
     private String nama;
@@ -64,8 +68,8 @@ public class Pemain {
         this.deck = deck;
     }
 
-    public Deck getDeck_active() {
-        return (Deck) deck.getActive_deck();
+    public List<Kartu> getDeck_active() {
+        return  deck.getActive_deck();
     }
 
     public void setDeck_active(Deck deck_active) {

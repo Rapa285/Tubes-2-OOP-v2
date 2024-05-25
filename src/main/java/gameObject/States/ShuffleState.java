@@ -30,16 +30,16 @@ public class ShuffleState implements GameState {
     public GameState start_state(){
         Pemain currentPlayer = getCurrentPlayer();
         Deck deck = currentPlayer.getDeck();
-        while(true){
-            deck.shuffle();
-            List<Kartu> draw = deck.drawKartu();
-            if (draw == null){
-                break;
-            }else{
-                break;
-            }
-
-        }
+//        while(true){
+//            deck.shuffle();
+//            List<Kartu> draw = deck.drawKartu();
+//            if (draw == null){
+//                break;
+//            }else{
+//                break;
+//            }
+//
+//        }
 
         return next_state();
 

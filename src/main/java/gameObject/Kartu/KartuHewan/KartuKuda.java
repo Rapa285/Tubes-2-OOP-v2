@@ -9,7 +9,7 @@ public class KartuKuda extends KartuHewan{
 
     // public methods
     public KartuKuda() {
-        super("Kuda", 0, 14, "","@../../../gameobject_resource/Hewan/horse.png");
+        super("Kuda", 0, 14, "","file:src/gameobject_resource/Hewan/horse.png");
     }
 
     public KartuProduk getProduct() {

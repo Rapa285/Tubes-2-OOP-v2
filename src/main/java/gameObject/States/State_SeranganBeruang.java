@@ -33,13 +33,13 @@ public class State_SeranganBeruang extends Thread implements GameState {
     }
 
     public GameState start_state(){
-        if (serang){
-            Thread timer = startTimer();
-            timer.start();
-            for (Integer cords : area) {
-                ladang.getPetak().remove(cords);
-            }
-        }
+//        if (serang){
+//            Thread timer = startTimer();
+//            timer.start();
+//            for (Integer cords : area) {
+//                ladang.getPetak().remove(cords);
+//            }
+//        }
         return next_state();
     }
 

@@ -57,7 +57,13 @@ public class Ladang {
     }
 
 
+    public void swtichPetak(Integer petakId1,Integer petakId2){
+        Kartu kartu1 = petak.get(petakId1);
+        Kartu kartu2 = petak.get(petakId2);
 
+        petak.put(petakId1,kartu2);
+        petak.put(petakId2,kartu1);
+    }
 
 
     // Method untuk menambah umur semua tanaman di ladang

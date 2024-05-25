@@ -48,6 +48,10 @@ public class Deck {
         Collections.shuffle(main_deck);
     }
 
+    public void SwicthPosKartu(Integer id1, Integer id2){
+        Collections.swap(active_deck,id1,id2);
+    }
+
     public void mainToActive(Kartu kartu) {
         main_deck.remove(kartu);
         active_deck.add(kartu);

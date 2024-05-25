@@ -30,6 +30,14 @@ public class GameManager{
     public GameState getGameState(){
         return gameState;
     }
+    public Pemain getCurrPlayer(){
+        if (turn%2 == 1){
+            return p1;
+        }else{
+            return p2;
+        }
+
+    }
 
     public void start_turn(){
         if(!(gameState instanceof FreeState)) {

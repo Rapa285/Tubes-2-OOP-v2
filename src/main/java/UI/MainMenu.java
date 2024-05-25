@@ -1,6 +1,7 @@
 package UI;
 
 import gameObject.GameManager;
+import gameObject.Kartu.KartuHewan.*;
 import gameObject.Pemain.Pemain;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,6 +17,13 @@ public class MainMenu extends Application {
 //        FXMLLoader fxmlLoader = new FXMLLoader((getClass().getResource("DeckP1.fxml")));
         Pemain p1 = new Pemain("Player1",1);
         Pemain p2 = new Pemain("Player2",2);
+        p1.getDeck_active().add(new KartuAyam());
+        p1.getDeck_active().add(new KartuSapi());
+        p1.getDeck_active().add(new KartuHiuDarat());
+        p1.getDeck_active().add(new KartuKuda());
+        p1.getDeck_active().add(new KartuBeruang());
+        p1.getDeck_active().add(new KartuDomba());
+        System.out.println(p1.getDeck_active());
         MainWindow_Controller MWcon= new MainWindow_Controller(new GameManager(p1,p2));
         fxmlLoader.setController(MWcon);
 
