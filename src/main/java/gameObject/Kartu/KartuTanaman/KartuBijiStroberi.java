@@ -1,6 +1,7 @@
 package gameObject.Kartu.KartuTanaman;
 
-import gameObject.Kartu.KartuProduk;
+import gameObject.Kartu.KartuProduk.KartuProduk;
+import gameObject.Kartu.KartuProduk.KartuStroberi;
 
 public class KartuBijiStroberi extends KartuTanaman{
 
@@ -11,6 +12,6 @@ public class KartuBijiStroberi extends KartuTanaman{
 
     @Override
     public KartuProduk getProduct() {
-        return new KartuProduk();
+        return new KartuStroberi();
     }
 }

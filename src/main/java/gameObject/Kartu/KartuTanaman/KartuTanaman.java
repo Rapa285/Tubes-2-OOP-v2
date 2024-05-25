@@ -2,7 +2,7 @@ package gameObject.Kartu.KartuTanaman;
 
 import gameObject.Kartu.Kartu;
 import gameObject.Kartu.KartuItem;
-import gameObject.Kartu.KartuProduk;
+import gameObject.Kartu.KartuProduk.KartuProduk;
 
 import java.util.ArrayList;
 import java.util.List;

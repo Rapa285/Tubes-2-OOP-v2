@@ -1,7 +1,7 @@
 package gameObject.Pemain;
 
 import gameObject.Kartu.Kartu;
-import gameObject.Kartu.KartuHewan;
+import gameObject.Kartu.KartuHewan.KartuHewan;
 import gameObject.Kartu.KartuItem;
 import gameObject.Kartu.KartuTanaman.KartuTanaman;
 

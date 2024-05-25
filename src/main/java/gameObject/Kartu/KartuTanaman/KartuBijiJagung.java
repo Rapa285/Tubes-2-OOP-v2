@@ -1,6 +1,7 @@
 package gameObject.Kartu.KartuTanaman;
 
-import gameObject.Kartu.KartuProduk;
+import gameObject.Kartu.KartuProduk.KartuJagung;
+import gameObject.Kartu.KartuProduk.KartuProduk;
 
 public class KartuBijiJagung extends KartuTanaman{
 
@@ -8,9 +9,9 @@ public class KartuBijiJagung extends KartuTanaman{
         super(0,3,"Biji Jagung","","@../../../gameobject_resource/Tanaman/corn seeds.png");
     }
 
-    @Override
+
     public KartuProduk getProduct() {
-        return new KartuProduk();
+        return new KartuJagung();
     }
 }
 

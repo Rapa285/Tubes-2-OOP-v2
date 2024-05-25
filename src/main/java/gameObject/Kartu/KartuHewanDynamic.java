@@ -1,5 +1,8 @@
 package gameObject.Kartu;
 
+import gameObject.Kartu.KartuHewan.KartuHewan;
+import gameObject.Kartu.KartuProduk.KartuProduk;
+
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
@@ -32,18 +35,18 @@ public class KartuHewanDynamic extends KartuHewan {
     }
 
     public void feedKarnivora(KartuProduk produk) {
-        if (produk.getType() == jenisHewan.karnivora) {
+        if (produk.getType() == JenisHewan.karnivora) {
             super.add_weight(produk.getBerat());
-            System.out.println("makan " + produk.getName());
+            System.out.println("makan " + produk.getNama());
         } else {
             System.out.println("tidak bisa makan itu");
         }
     }
 
     public void feedHerbivora(KartuProduk produk) {
-        if (produk.getType() == jenisHewan.herbivora) {
+        if (produk.getType() == JenisHewan.herbivora) {
             super.add_weight(produk.getBerat());
-            System.out.println("makan " + produk.getName());
+            System.out.println("makan " + produk.getNama());
         } else {
             System.out.println("tidak bisa makan itu");
         }
@@ -52,7 +55,7 @@ public class KartuHewanDynamic extends KartuHewan {
 
     public void feedOmnivora(KartuProduk produk) {
         super.add_weight(produk.getBerat());
-        System.out.println("makan " + produk.getName());
+        System.out.println("makan " + produk.getNama());
 
     }
 }
