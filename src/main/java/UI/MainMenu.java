@@ -18,10 +18,13 @@ public class MainMenu extends Application {
         Pemain p2 = new Pemain("Player2",2);
         MainWindow_Controller MWcon= new MainWindow_Controller(new GameManager(p1,p2));
         fxmlLoader.setController(MWcon);
+
+//        MWcon.initialize();
+
+
 //        Parent root = fxmlLoader.load();
 //        Parent parent = (Parent) fxmlLoader.getController();
 //        Scene scene = new Scene(root, 320, 240);
-        System.out.println("Hello world!");
         Scene scene1 = fxmlLoader.load();
         primaryStage.setTitle("test");
         primaryStage.setScene(scene1);
